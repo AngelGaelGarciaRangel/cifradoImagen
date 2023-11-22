@@ -6,16 +6,19 @@ def esImagen(url):
   return bool(esImagen)
 
 def encriptar_desencriptar(url, llave):
-    archivoLeer = open(url, 'rb')
-    imagen = archivoLeer.read()
-    archivoLeer.close()
-    imagen = bytearray(imagen)
-    for indice, valor in enumerate(imagen):
-        imagen[indice] = valor ^ llave
-    archivoLeer = open(url, 'wb')
-    archivoLeer.write(imagen)
-    archivoLeer.close()
-    print('Hecho...')
+    try:
+      archivoLeer = open(url, 'rb')
+      imagen = archivoLeer.read()
+      archivoLeer.close()
+      imagen = bytearray(imagen)
+      for indice, valor in enumerate(imagen):
+          imagen[indice] = valor ^ llave
+      archivoLeer = open(url, 'wb')
+      archivoLeer.write(imagen)
+      archivoLeer.close()
+      print('Hecho...')
+    except:
+      print("El archivo introducido no se pudo leer, es muy probable que no exista.")
     
 def menu():
   opcion = int(input("1. Encriptar una imagen\n2. Desencriptar una Imagen\nSelecciona una opción (1 o 2): "))
