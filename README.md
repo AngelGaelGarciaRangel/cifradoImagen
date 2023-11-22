@@ -6,4 +6,4 @@ El programa se basa en el artículo _Encrypt and Decrypt Image using Python_ de 
 - Manejo de error en el caso de que la llave introducida no sea un número entero.
 - Manejo de erorr en el caso de que el url sea incorrecto (no exista la imagen).
 - Manejo de error en el caso de que el url no se trate de una imagen (la extensión no sea correcta).
-Referencias: Patil, R. (2022). Encrypt and Decrypt Image using Python. Geeksforgeeks. Recuperado de: https://www.geeksforgeeks.org/encrypt-and-decrypt-image-using-python/ 
+### Referencias: Patil, R. (2022). Encrypt and Decrypt Image using Python. Geeksforgeeks. Recuperado de: https://www.geeksforgeeks.org/encrypt-and-decrypt-image-using-python/ 
